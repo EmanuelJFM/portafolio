@@ -1,0 +1,33 @@
+.inicio-container{
+    margin-left: 90px;
+}
+.social-icons {
+    margin: 1rem 0;
+}
+.bx {
+    font-size: 2rem;
+    margin: 0.5rem;
+    color: #3e7db3;
+
+    &:hover {
+        color: #022538;
+        transition: all ease-in-out 250ms;
+    }
+}
+.btn-primary {
+    background-color: #3e7db3;
+    border: none;
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    &:hover {
+        background-color: #022538;
+        transition: all ease-in-out 250ms;
+    }
+}
+.card {
+    border-radius: 25px; 
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
