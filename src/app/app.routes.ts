@@ -8,7 +8,7 @@ export const routes: Routes = [{
     component: LayoutComponent,
     children:[
         {
-            path:'inicio',
+            path:'',
             component:HomeComponent
         },
         {
