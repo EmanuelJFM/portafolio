@@ -1,0 +1,56 @@
+.header {
+    background: #3e7db3;
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+   .container {
+    .nav {
+        display: flex; // Añade flexbox al contenedor .nav
+        justify-content: center; // Centra los elementos horizontalmente
+        ul.nav-list {
+            display: flex;
+            justify-content: center; 
+            padding: 0;
+            list-style: none;
+        }
+    
+        li {
+            display: inline-block;
+            padding-top: 23px;
+            position: relative;
+            margin: 0 35px; 
+        }
+    
+        a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+    
+            &:hover {
+                color: #022538;
+            }
+    
+            &::before {
+                content: '';
+                display: block;
+                height: 5px;
+                background-color: #022538;
+                position: absolute;
+                top: 100%;
+                width: 0%;
+                transition: all ease-in-out 250ms;
+            }
+    
+            &:hover::before {
+                width: 100%;
+            }
+        }
+    }
+   }
+}
+footer {
+    background: #3e7db3;
+}

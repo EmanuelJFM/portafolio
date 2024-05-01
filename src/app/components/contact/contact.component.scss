@@ -1,0 +1,66 @@
+.contacto {
+    background: #f6efed; 
+    padding: 30px;
+    height: auto;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+
+    h2 {
+        text-align: left;
+        margin-bottom: 15px;
+        color: #344c6c;
+        @media (max-width: 768px) {
+            text-align: center; 
+        }
+    }
+
+    p {
+        text-align: left;
+        color: #666;
+        margin-bottom: 30px;
+        @media (max-width: 768px) {
+            text-align: center; 
+        }
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+        .form-control{
+            border-radius: 10px;
+        }
+    }
+
+    .btn-primary {
+        background-color: #3e7db3;
+        border-radius: 25px;
+        border: none;
+
+        &:hover {
+            background-color: #022538;
+        }
+    }
+}
+// Media query para dispositivos móviles
+@media (max-width: 768px) {
+    .contacto {
+        padding: 20px;
+        .form-group {
+            .form-control {
+                border-radius: 8px; 
+            }   
+        }
+        .button-container {
+            display: flex;
+            justify-content: center; 
+        
+            @media (min-width: 769px) {
+                justify-content: flex-start;
+            }
+            .btn-primary {
+                padding: 0.4rem 1rem; 
+                font-size: 0.875rem; 
+                width: fit-content;
+            }
+        }         
+    }
+}

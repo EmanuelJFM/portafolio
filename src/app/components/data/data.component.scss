@@ -1,0 +1,125 @@
+.datos {
+    background-color: #f6efed;
+    height: auto;
+    padding-top: 3rem;
+
+    h2 {
+        color: #344c6c;
+    }
+    .card {
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+        .card-body {
+            .skills {
+                .skill-item {
+                    margin-bottom: 1rem;
+
+                    h4 {
+                        color: #344c6c;
+                    }
+
+                    .progress {
+                        background-color: #e9ecef;
+
+                        .progress-bar {
+                            background-color: #3e7db3;
+                        }
+                    }
+                }
+            }
+
+            .btn-primary {
+                background-color: #3e7db3;
+                border-radius: 25px;
+                border: none;
+
+                &:hover {
+                    background-color: #022538;
+                }
+            }
+        }
+    }
+    .divider {
+        border-top: 3px solid black;
+        width: 100%;
+        margin: 50px auto;
+    }
+}
+// Media query para dispositivos móviles
+@media (max-width: 768px) {
+    .datos {
+        h2 {
+            text-align: left; 
+    
+            @media (max-width: 768px) {
+                text-align: center; 
+            }
+        }
+        .rounded-circle {
+            display: none; 
+        }
+        .card {
+            top: 0;
+            padding: 15px;
+            height: auto;
+    
+            .card-body {
+                .col-md-6 {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: center; 
+                }
+                .skills {
+                    display: none;
+                }
+                .card-text {
+                    order: 1; 
+                }
+                .btn-primary {
+                    padding: 0.4rem 1rem; 
+                    font-size: 0.875rem; 
+                    width: fit-content;
+                }
+            }
+        }
+        .divider {
+            border-top: 3px solid black;
+            width: 100%;
+            margin: 30px auto;
+        }
+    }
+}
+// media querys para tablets
+@media (min-width:769px) and (max-width: 1024px){
+    .datos {
+        .rounded-circle{
+            margin-bottom: 15px;
+        }
+        .card {
+            top: 0;
+            padding: 15px;
+            height: auto;
+            .card-body {
+                .col-md-6 {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: center; 
+                }
+                .card-text {
+                    order: 1; 
+                }
+                .skills{
+                    margin-top: 0;
+                    order: 2;
+                }
+                .btn-primary {
+                    padding: 0.4rem 1rem; 
+                    font-size: 0.875rem; 
+                    width: fit-content;
+                }
+            }
+        }
+    }
+}

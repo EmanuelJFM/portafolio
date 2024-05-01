@@ -1,0 +1,39 @@
+<div class="contacto">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Contacta conmigo</h2>
+                <p>Trabajemos juntos en el proyecto que deseas hacer realidad 🙌</p>
+            </div>
+            <div class="col-md-6">
+                <form [formGroup]="contactForm">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" formControlName="nombre" class="form-control" placeholder="Tu nombre">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" formControlName="email" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="asunto">Asunto</label>
+                        <input type="text" id="asunto" formControlName="asunto" class="form-control" placeholder="Asunto">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" formControlName="mensaje" class="form-control" rows="3" placeholder="Mensaje"></textarea>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit" class="btn btn-primary" (click)="onSubmit()">Enviar Mensaje</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
