@@ -164,14 +164,21 @@
             margin-top: 20px; 
             display: flex;
             flex-direction: column; 
-            align-items: center; 
+            align-items: center;
             p {
-                margin-bottom: 10px; 
+                margin-bottom: 15px; 
+                animation: float 2s ease-in-out infinite;
             }
             .bx {
                 font-size: 2rem;
+                animation: float 2s ease-in-out infinite;
             }
-        }
+            @keyframes float {
+                0% { transform: translateY(0px); }
+                50% { transform: translateY(-10px); }
+                100% { transform: translateY(0px); }
+            }
+        }        
     }
     .datos {
         h2 {
