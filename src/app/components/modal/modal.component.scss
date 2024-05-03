@@ -1,0 +1,21 @@
+.modal {
+  display: none;
+  position: fixed;
+  background-color: rgba(0,0,0,0.4);
+  .btn-primary {
+      background-color: #3e7db3;
+      width: auto;
+      height: auto;
+      padding: auto;
+      border-radius: 25px;
+      border: none;
+
+      &:hover {
+          background-color: #022538;
+          color: white;
+      }
+  }
+}
+.modal.show {
+  display: block;
+}

@@ -4,69 +4,17 @@
         <p class="text-center">Algunas tecnologías que he usado a lo largo de mi formacion academica y
             profesional</p>
         <div class="row">
-            <div class="col-12 col-md-4 skill">
-                <i class='bx bxl-angular icon'></i>
+            @for (skill of skills; track skill.id) {
+                <div class="col-12 col-md-4 skill">
+                <i [class]="skill.class"></i>
                 <div class="skill-info">
-                    <h3>Angular</h3>
+                    <h3>{{skill.name}}</h3>
                 </div>
             </div>
-            <div class="col-12 col-md-4 skill">
-                <i class='bx bxl-typescript icon'></i>
-                <div class="skill-info">
-                    <h3>Typescript</h3>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 skill">
-                <i class='bx bxl-visual-studio icon'></i>
-                <div class="skill-info">
-                    <h3>Visual Studio Code</h3>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-md-4 skill">
-                <i class='bx bxl-android icon'></i>
-                <div class="skill-info">
-                    <h3>Android</h3>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 skill">
-                <i class='bx bxl-firebase icon'></i>
-                <div class="skill-info">
-                    <h3>Firebase</h3>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 skill">
-                <i class='bx bxl-nodejs icon'></i>
-                <div class="skill-info">
-                    <h3>NodeJs</h3>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-md-4 skill">
-                <i class='bx bxs-conversation icon'></i>
-                <div class="skill-info">
-                    <h3>Scrum</h3>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 skill">
-                <i class='bx bxs-data icon'></i>
-                <div class="skill-info">
-                    <h3>SQL Server</h3>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 skill">
-                <i class='bx bxl-github icon'></i>
-                <div class="skill-info">
-                    <h3>Github</h3>
-                </div>
-            </div>
+            }
         </div>
         <div class="row pt-3">
-            <div class="col-12">
-                <hr class="divider" />
-            </div>
+            <hr class="divider">
         </div>
     </div>
 </div>
