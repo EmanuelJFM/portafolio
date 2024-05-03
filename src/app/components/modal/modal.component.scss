@@ -2,6 +2,8 @@
   display: none;
   position: fixed;
   background-color: rgba(0,0,0,0.4);
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
   .btn-primary {
       background-color: #3e7db3;
       width: auto;
@@ -16,6 +18,8 @@
       }
   }
 }
+
 .modal.show {
   display: block;
+  opacity: 1;
 }
