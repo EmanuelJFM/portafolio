@@ -22,7 +22,7 @@ export class ContactComponent {
     name : new FormControl('', Validators.required),
     email: new FormControl('', Validators.required),
     subject: new FormControl('', Validators.required),
-    text: new FormControl('', Validators.required)
+    content: new FormControl('', Validators.required)
   });
  
   sendInformation(): void {
