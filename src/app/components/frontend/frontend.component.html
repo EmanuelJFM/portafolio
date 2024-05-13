@@ -1,0 +1,19 @@
+<div class="frontend">
+	<div class="container">
+		<h2 class="pt-4 text-center">Proyectos Frontend</h2>
+		<div class="list">
+			<ul class="ul">
+				<li class="li" *ngFor="let project of projects">
+					<div class="content">
+						<div class="text-content">
+							<h5>{{project.title}}</h5>
+							<p>Repositorio de Github: <a [href]="project.link" [target]="false">{{project.link}}</a></p>
+						</div>
+						<img [src]="project.img" [alt]="project.title" class="img px-5">
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<hr class="divider">
+</div>

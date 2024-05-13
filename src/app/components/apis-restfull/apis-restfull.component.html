@@ -1,0 +1,19 @@
+<div class="api">
+    <div class="container">
+        <h2 class="pt-4">Apis creadas</h2>
+        <div class="card">
+          <div class="api-items">
+            <div *ngFor="let api of apis" class="api-item">
+              <div class="api-icon">
+                <i [class]="api.iconClass"></i>
+              </div>
+              <div class="api-info">
+                <h5>{{api.name}}</h5>
+                <a [href]="api.repoLink" [target]="false">{{api.repoLink}}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+</div>

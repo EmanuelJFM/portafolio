@@ -1,0 +1,21 @@
+<div class="mobile">
+	<div class="container">
+		<h3 class="title pt-4">Proyectos Moviles</h3>
+		<div class="cards">
+			<div class="card" *ngFor="let item of items">
+				<div class="card-image">
+					<img [src]="item.img" [alt]="item.title" class="img">
+				</div>
+				<div class="card-content">
+					<div class="top-content">
+						<i class='bx bxs-mobile icon'></i>
+						<h5>{{item.title}}</h5>
+						<p>Repositorio de Github: <a [href]="item.repoLink" [target]="false">{{item.repoLink}}</a></p>
+						<p>{{item.description}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr class="divider">
+</div>

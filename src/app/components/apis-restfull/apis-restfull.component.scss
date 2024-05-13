@@ -1,0 +1,65 @@
+.api {
+  height: 40vh;
+  background: #f6efed;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      margin-bottom: 25px;
+      width: auto;
+      .api-items {
+        .api-item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+
+          .api-icon {
+            margin-right: 10px;
+          }
+
+          i {
+            font-size: 1.5em;
+            color: #022538; 
+          }
+
+          .api-info {
+            h5 {
+              margin-bottom: 5px;
+            }
+
+            a {
+              color: #022538; 
+              text-decoration: none;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .api{
+    .container{
+      .card{
+        padding: 15px;
+        height: auto;
+      }
+    }
+  }
+}
